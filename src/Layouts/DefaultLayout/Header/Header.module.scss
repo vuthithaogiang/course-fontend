@@ -1,0 +1,80 @@
+.wrapper {
+    width: 100%;
+    height: var(--height-header);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(136deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.66) 100%);
+    backdrop-filter: blur(65.02783203125px);
+    z-index: 90;
+}
+
+.inner {
+    height: inherit;
+    width: var(--width-content);
+    //background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.group-actions {
+    display: flex;
+    gap: 44px;
+}
+
+.action-item {
+    color: #9c9d9d;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+
+    &:hover {
+        color: #333;
+    }
+}
+
+.action-item.active {
+    color: #000;
+}
+
+.login-btns {
+    button {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.login-btns button:nth-child(1) {
+    margin-right: 24px;
+    color: #010101;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login-btns button:nth-child(2) {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 11px 33px;
+    cursor: pointer;
+    border-radius: 30px;
+}

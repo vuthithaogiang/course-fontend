@@ -1,5 +1,11 @@
+import Introduction from './Introduction';
+
 function Home() {
-    return <h2>Home page</h2>;
+    return (
+        <>
+            <Introduction />
+        </>
+    );
 }
 
 export default Home;
