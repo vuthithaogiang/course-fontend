@@ -174,6 +174,7 @@ function OurCourses() {
                             onDragStart={dragStart}
                             onDragOver={dragOver}
                             onDragEnd={dragEnd}
+                            onMouseMove={(e) => e.preventDefault()}
                         >
                             {courses.map((course, index) => (
                                 <CourseItem key={index} courseInfo={course} index={indexCourse} />

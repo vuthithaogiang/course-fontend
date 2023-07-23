@@ -20,6 +20,16 @@ const images = {
     halfStar: require('~/assets/images/halfStarIcon.svg').default,
     preIcon: require('~/assets/images/preIcon.svg').default,
     nextIcon: require('~/assets/images/nextIcon.svg').default,
+    peopleIcon: require('~/assets/images/peopleIcon.svg').default,
+    clockIcon: require('~/assets/images/clockIcon.svg').default,
+    calendarIcon: require('~/assets/images/calendarIcon.svg').default,
+    moneyIcon: require('~/assets/images/moneyIcon.svg').default,
+
+    newImage1: require('~/assets/images/newsImage1.png'),
+    newImage2: require('~/assets/images/newsImage2.png'),
+    newImage3: require('~/assets/images/newsImage3.png'),
+    avatar1: require('~/assets/images/avatar1.png'),
+    avatar2: require('~/assets/images/avatar2.png'),
 };
 
 export default images;
