@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 79px;
+}
+
+.inner {
+    width: var(--width-content);
+    margin: auto;
+}
+
+.list-partner {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    width: fit-content;
+    margin: auto;
+}

@@ -1,0 +1,105 @@
+.wrapper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.inner {
+    width: var(--width-content);
+    margin: auto;
+}
+
+.inner header {
+    text-align: center;
+    p {
+        margin-bottom: 24px;
+        color: #0166ff;
+
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        color: #010101;
+
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+//btn
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    right: 82px;
+    top: -45px;
+}
+.actions div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1eaea;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.04);
+
+    cursor: pointer;
+}
+
+.actions div:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #f1eaea;
+}
+
+.course-carousel {
+    position: relative;
+}
+
+// slider
+
+.wrap-course {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-carousel .list-course {
+    --width-one-course: 252px;
+    --gap: 22px;
+    width: calc(4 * 252px + 4 * 22px);
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.view-all {
+    margin-top: 68px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 209px;
+    border-radius: 24px;
+    background: #0166ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+        line-height: 2.25;
+        margin-right: 8px;
+        color: #fff;
+        padding: 6px 0;
+    }
+}

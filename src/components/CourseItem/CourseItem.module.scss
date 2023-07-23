@@ -1,0 +1,62 @@
+.wrapper {
+    min-width: 252px;
+    max-width: 252px;
+
+    border-radius: 14px;
+    border: 1px solid #f3f3f3;
+    background: #fff;
+    padding: 15px 13px;
+    cursor: pointer;
+
+    &:hover {
+        margin-top: -8px;
+        border: none;
+        background: #fff;
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.04);
+    }
+}
+
+.thumb {
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    height: 158px;
+}
+
+.name {
+    margin-top: 16px;
+    color: #292c3f;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.group {
+    margin-top: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lessons {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    span {
+        color: #717171;
+
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    img {
+        width: 15px;
+        height: 15px;
+    }
+}

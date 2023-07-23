@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.wrap-half-star,
+.wrap-empty-star {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.wrap-half-star img:nth-child(2),
+.wrap-empty-star img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+}
