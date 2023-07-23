@@ -4,6 +4,7 @@ import OurCourses from './OurCourses';
 import ChooseUs from './ChooseUs';
 import EducationNews from './EducationNews';
 import UpcomingEvent from './UpcomingEvent';
+import FeatureCategory from './FeatureCategory';
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <ChooseUs />
             <EducationNews />
             <UpcomingEvent />
+            <FeatureCategory />
         </>
     );
 }

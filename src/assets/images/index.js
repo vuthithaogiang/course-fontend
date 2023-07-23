@@ -6,6 +6,9 @@ const images = {
     decoration1: require('~/assets/images/decoration1.png'),
     decoration2: require('~/assets/images/decoration2.svg').default,
     decoration3: require('~/assets/images/decoration3.svg').default,
+    decoration4: require('~/assets/images/decoration4.svg').default,
+    decoration5: require('~/assets/images/decoration5.svg').default,
+
     girlLaptop: require('~/assets/images/smiling-cute-teen-girl-using-laptop-white-wall.png'),
     google: require('~/assets/images/google.svg').default,
     amazon: require('~/assets/images/amazon.svg').default,
@@ -38,6 +41,22 @@ const images = {
     eventImage3: require('~/assets/images/event3.png'),
     eventImage4: require('~/assets/images/event4.png'),
     locationIcon: require('~/assets/images/locationIcon.svg').default,
+
+    categoryDesign: require('~/assets/images/pencil 1.png'),
+    categoryMath: require('~/assets/images/math 1.png'),
+    categoryChemistry: require('~/assets/images/science 1.png'),
+    categoryFood: require('~/assets/images/food-delivery 1.png'),
+    categoryTechnology: require('~/assets/images/tech 1.png'),
+    categoryLanguage: require('~/assets/images/graduating-student 1.png'),
+    categoryMedical: require('~/assets/images/med 1.png'),
+    categoryArtAndBlock: require('~/assets/images/art-book 1.png'),
+
+    quoteIcon: require('~/assets/images/quoteIcon.svg').default,
+    starBlue: require('~/assets/images/starBlueIcon.svg').default,
+    review1: require('~/assets/images/review1.png'),
+    review2: require('~/assets/images/review2.png'),
+
+    companyLogo: require('~/assets/images/companyLogo.svg').default,
 };
 
 export default images;

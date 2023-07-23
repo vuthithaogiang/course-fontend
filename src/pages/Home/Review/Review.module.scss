@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+.inner {
+    width: var(--width-content);
+    margin: auto;
+}
+
+.inner header {
+    text-align: center;
+
+    p {
+        margin-bottom: 14px;
+        color: #0166ff;
+
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    h2 {
+        margin-bottom: 103px;
+        color: #010101;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.35;
+    }
+}
