@@ -5,6 +5,7 @@ const images = {
     courseIcon: require('~/assets/images/courseIcon.svg').default,
     decoration1: require('~/assets/images/decoration1.png'),
     decoration2: require('~/assets/images/decoration2.svg').default,
+    decoration3: require('~/assets/images/decoration3.svg').default,
     girlLaptop: require('~/assets/images/smiling-cute-teen-girl-using-laptop-white-wall.png'),
     google: require('~/assets/images/google.svg').default,
     amazon: require('~/assets/images/amazon.svg').default,
@@ -22,6 +23,7 @@ const images = {
     nextIcon: require('~/assets/images/nextIcon.svg').default,
     peopleIcon: require('~/assets/images/peopleIcon.svg').default,
     clockIcon: require('~/assets/images/clockIcon.svg').default,
+    clockIcon1: require('~/assets/images/clockIcon1.svg').default,
     calendarIcon: require('~/assets/images/calendarIcon.svg').default,
     moneyIcon: require('~/assets/images/moneyIcon.svg').default,
 
@@ -30,6 +32,12 @@ const images = {
     newImage3: require('~/assets/images/newsImage3.png'),
     avatar1: require('~/assets/images/avatar1.png'),
     avatar2: require('~/assets/images/avatar2.png'),
+
+    eventImage1: require('~/assets/images/event1.png'),
+    eventImage2: require('~/assets/images/event2.png'),
+    eventImage3: require('~/assets/images/event3.png'),
+    eventImage4: require('~/assets/images/event4.png'),
+    locationIcon: require('~/assets/images/locationIcon.svg').default,
 };
 
 export default images;

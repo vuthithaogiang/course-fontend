@@ -3,6 +3,7 @@ import Partner from './Partner';
 import OurCourses from './OurCourses';
 import ChooseUs from './ChooseUs';
 import EducationNews from './EducationNews';
+import UpcomingEvent from './UpcomingEvent';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <OurCourses />
             <ChooseUs />
             <EducationNews />
+            <UpcomingEvent />
         </>
     );
 }
