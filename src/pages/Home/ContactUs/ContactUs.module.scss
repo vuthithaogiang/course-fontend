@@ -1,0 +1,105 @@
+.wrapper {
+    width: 100%;
+    padding-top: 74px;
+    background-color: #f8fbff;
+}
+
+.inner {
+    width: var(--width-content);
+    margin: auto;
+    display: flex;
+    gap: 206px;
+}
+
+.left p:first-child {
+    margin-bottom: 20px;
+    color: #0166ff;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left h2 {
+    margin-bottom: 24px;
+    color: #010101;
+
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.left .desc {
+    margin-bottom: 30px;
+
+    width: 512px;
+    color: #898b94;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.action-btn {
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 20px;
+    background: #0166ff;
+    box-shadow: 0px 6px 24px 0px rgba(1, 102, 255, 0.2);
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.right .container {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    bottom: -44px;
+    left: 0;
+    width: 100%;
+    height: 353px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #e7effe 0%, rgba(232, 242, 254, 0) 100%);
+}
+
+.decoration-one {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 44px;
+    right: 0;
+}
+
+.decoration-two {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: -34px;
+    bottom: 78px;
+}
+
+.decoration-three {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -24px;
+    bottom: 30%;
+}
+.thumb {
+    display: block;
+    margin: 0 40px;
+    width: 274px;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 1;
+}
