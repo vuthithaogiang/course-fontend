@@ -5,6 +5,7 @@ import ChooseUs from './ChooseUs';
 import EducationNews from './EducationNews';
 import UpcomingEvent from './UpcomingEvent';
 import FeatureCategory from './FeatureCategory';
+import Review from './Review';
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <EducationNews />
             <UpcomingEvent />
             <FeatureCategory />
+            <Review />
         </>
     );
 }

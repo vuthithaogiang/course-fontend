@@ -8,6 +8,7 @@ const images = {
     decoration3: require('~/assets/images/decoration3.svg').default,
     decoration4: require('~/assets/images/decoration4.svg').default,
     decoration5: require('~/assets/images/decoration5.svg').default,
+    decoration6: require('~/assets/images/decoration6.svg').default,
 
     girlLaptop: require('~/assets/images/smiling-cute-teen-girl-using-laptop-white-wall.png'),
     google: require('~/assets/images/google.svg').default,
