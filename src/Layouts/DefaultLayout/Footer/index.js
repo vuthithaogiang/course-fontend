@@ -1,10 +1,13 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import images from '~/assets/images';
+import { useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
 function Footer() {
+    const navigate = useNavigate();
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -20,7 +23,7 @@ function Footer() {
                 <div className={cx('group-action')}>
                     {/* 1 */}
                     <div>
-                        <span className={cx('logo')}>
+                        <span className={cx('logo')} onClick={() => navigate('/')}>
                             <img src={images.logo} alt="Eduka" />
                             <span>Eduka.</span>
                         </span>
@@ -34,8 +37,8 @@ function Footer() {
                     {/* 2 */}
                     <div>
                         <h4>Pages</h4>
-                        <h6>Home</h6>
-                        <h6>About</h6>
+                        <h6 onClick={() => navigate('/')}>Home</h6>
+                        <h6 onClick={() => navigate('/about-us')}>About</h6>
                         <h6>Contact</h6>
                         <h6>Blog</h6>
                         <h6>Courses</h6>
@@ -54,8 +57,8 @@ function Footer() {
                     {/* 4 */}
                     <div>
                         <h4>Account Pages</h4>
-                        <h6>Log In</h6>
-                        <h6>Sign Up</h6>
+                        <h6 onClick={() => navigate('/sign-in')}>Log In</h6>
+                        <h6 onClick={() => navigate('/sign-up')}>Sign Up</h6>
                         <h6>Forget Password</h6>
                         <h6>Reset Password</h6>
                         <h6>Email Confirmation</h6>

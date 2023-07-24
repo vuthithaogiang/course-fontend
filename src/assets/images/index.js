@@ -59,6 +59,8 @@ const images = {
     review2: require('~/assets/images/review2.png'),
 
     companyLogo: require('~/assets/images/companyLogo.svg').default,
+    googleIcon: require('~/assets/images/googleIcon.svg').default,
+    thumbnailLogIn: require('~/assets/images/young-woman-attending-online-class (1).png'),
 };
 
 export default images;

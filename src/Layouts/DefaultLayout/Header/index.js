@@ -10,7 +10,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
+                <div className={cx('logo')} onClick={() => navigate('/')}>
                     <img src={images.logo} alt="Eduka" />
                     <span>Eduka.</span>
                 </div>
@@ -24,8 +24,8 @@ function Header() {
                     <div className={cx('action-item')}>Contact</div>
                 </div>
                 <div className={cx('login-btns')}>
-                    <button>Sign in</button>
-                    <button>Sign up</button>
+                    <button onClick={() => navigate('/sign-in')}>Sign in</button>
+                    <button onClick={() => navigate('/sign-up')}>Sign up</button>
                 </div>
             </div>
         </header>
