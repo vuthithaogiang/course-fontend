@@ -2,6 +2,7 @@ import Home from '~/pages/Home';
 import SignIn from '~/pages/SignIn';
 import AboutUs from '~/pages/AboutUs';
 import SignUp from '~/pages/SignUp';
+import Profile from '~/pages/Profile';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -10,6 +11,6 @@ const publicRoutes = [
     { path: '/about-us', component: AboutUs },
 ];
 
-const privateRoutes = [{}];
+const privateRoutes = [{ path: '/profile', component: Profile }];
 
 export { publicRoutes, privateRoutes };

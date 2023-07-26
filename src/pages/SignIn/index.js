@@ -2,20 +2,24 @@ import classNames from 'classnames/bind';
 import styles from './SignIn.module.scss';
 import images from '~/assets/images';
 import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useRef, useState, useContext } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from '~/api/axios';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
-import AuthContext from '~/contexts/AuthProvider';
+import useAuth from '~/hooks/useAuth';
+import { useLocation } from 'react-router-dom';
 
 const LOGIN_URL = '/auth/authentication';
 
 const cx = classNames.bind(styles);
 
 function SignIn() {
-    const { setAuth } = useContext(AuthContext);
+    const { setAuth } = useAuth();
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location?.state?.from?.pathname || '/';
+
     const [state, setState] = useState('login');
     const [otp, setOtp] = useState(new Array(4).fill(''));
     const [emailReceiveOtp, setEmailReceiveOtp] = useState('');
@@ -25,7 +29,6 @@ function SignIn() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [success, setSuccess] = useState(false);
 
     const notifyError = (message) => {
         toast.error(`${message}! 🎉`, {
@@ -101,19 +104,28 @@ function SignIn() {
                 //withCredentials: true,
             });
 
-            console.log(response?.data);
+            // console.log(response?.data);
             const accessToken = response?.data?.access_token;
             const refreshToken = response?.data?.refresh_token;
             const role = response?.data?.role;
 
-            setAuth({ email, password, accessToken, refreshToken, role });
+            const data = {
+                email: email,
+                password: password,
+                accessToken: accessToken,
+                refreshToken: refreshToken,
+                role: role,
+            };
+
+            console.log(data);
+
+            setAuth(data);
 
             setEmail('');
             setPassword('');
-            setSuccess(true);
 
-            navigate('/');
             notifySuccess('Log in successfully!');
+            navigate(from, { replace: true });
         } catch (error) {
             if (!error?.response) {
                 notifyError('No Server Response');
