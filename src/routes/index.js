@@ -10,6 +10,6 @@ const publicRoutes = [
     { path: '/about-us', component: AboutUs },
 ];
 
-const privateRoutes = [];
+const privateRoutes = [{}];
 
 export { publicRoutes, privateRoutes };

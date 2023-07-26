@@ -317,7 +317,7 @@ function SignUp() {
                                     <span className={cx('wrap-icon')}>
                                         <FontAwesomeIcon icon={faCheck} />
                                     </span>
-                                    <h2>Authenticated</h2>
+                                    <h2>Successfully!</h2>
                                     <p>
                                         Thank you for register account. Now, Let's start learning with Eduka by log in
                                         below.

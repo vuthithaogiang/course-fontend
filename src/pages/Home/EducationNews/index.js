@@ -129,7 +129,7 @@ function EducationNews() {
                         {category === 'All' ? (
                             <>
                                 {LIST_NEWS.map((item) => (
-                                    <div className={cx('news-item')}>
+                                    <div className={cx('news-item')} key={item.id}>
                                         <img className={cx('thumb')} src={item.thumbnail} alt={item.name} />
                                         <div className={cx('date-publish')}>
                                             <span className={cx(`${item.type}`)}>{item.type}</span>
