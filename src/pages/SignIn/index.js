@@ -67,7 +67,9 @@ function SignIn() {
                                     <span></span>
                                 </span>
                                 <input className={cx('form-input')} placeholder="Email" />
+
                                 <input className={cx('form-input')} placeholder="Password" type="password" />
+
                                 <div className={cx('group-checkbox')}>
                                     <div>
                                         <input type="checkbox" id="remember-me" />
