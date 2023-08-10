@@ -13,7 +13,7 @@
     text-align: center;
     p {
         margin-bottom: 20px;
-        color: #0166ff;
+        color: var(--primary-color);
 
         font-size: 1.6rem;
         font-style: normal;
@@ -42,7 +42,7 @@
 
 .type-category {
     margin-bottom: 40px;
-    color: #325aff;
+    color: var(--primary-color);
 
     font-size: 1.8rem;
     font-style: normal;
@@ -55,7 +55,7 @@
 }
 
 .type-category.active {
-    background-color: #325aff;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
@@ -64,7 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
-    background: #0166ff;
+    background: var(--primary-color);
     color: #fff;
     width: fit-content;
 
@@ -111,35 +111,35 @@
         font-style: normal;
         font-weight: 500;
         line-height: 1.7;
-        padding-right: 40px;
+        padding-right: 30px;
     }
 }
 
 .news-item .thumb {
     width: 100%;
     object-fit: cover;
-    height: 200px;
+    //height: 200px;
     border-radius: 12px;
 }
 
 //TYPE
-.Art,
-.Business,
-.Career {
+.T-shirt,
+.Short,
+.Sock {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
 }
-.Art {
+.T-shirt {
     color: #325aff;
 }
 
-.Business {
+.Short {
     color: #a6cf4a;
 }
 
-.Career {
+.Sock {
     color: #fb6238;
 }
 
@@ -157,6 +157,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.4;
+}
+
+.date-publish span:nth-child(3) {
+    color: #fb6238;
+    margin-left: auto;
+    margin-right: 34px;
+    font-size: 1.5rem;
 }
 
 .desc-author {

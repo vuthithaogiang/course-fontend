@@ -24,9 +24,15 @@
     gap: 10px;
     cursor: pointer;
 
+    img {
+        display: block;
+        height: 58px;
+        object-fit: cover;
+    }
+
     span {
         color: #000;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: 700;
         line-height: normal;
     }
@@ -39,7 +45,6 @@
 
 .action-item {
     color: #9c9d9d;
-
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
@@ -77,4 +82,29 @@
     padding: 11px 33px;
     cursor: pointer;
     border-radius: 30px;
+}
+
+.current-user {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.current-user .cart svg {
+    color: #2d3134;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.name-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+    cursor: pointer;
 }

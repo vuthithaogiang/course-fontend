@@ -8,7 +8,8 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-import axios from '~/api/axios';
+
+import instance from '~/api/axios';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -124,7 +125,7 @@ function SignUp() {
                 password: password,
                 role: 'USER',
             };
-            const response = await axios.post(REGISTER_URL, body);
+            const response = await instance.post(REGISTER_URL, body);
             console.log(response);
 
             console.log(response.data);

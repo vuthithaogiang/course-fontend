@@ -3,7 +3,8 @@ import styles from './SignIn.module.scss';
 import images from '~/assets/images';
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useRef, useState } from 'react';
-import axios from '~/api/axios';
+
+import instance from '~/api/axios';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import useAuth from '~/hooks/useAuth';
@@ -99,15 +100,13 @@ function SignIn() {
                 email: email,
                 password: password,
             };
-            const response = await axios.post(LOGIN_URL, body, {
-                headers: { 'Content-Type': 'application/json' },
-                //withCredentials: true,
-            });
+            const response = await instance.post(LOGIN_URL, body);
 
             // console.log(response?.data);
             const accessToken = response?.data?.access_token;
             const refreshToken = response?.data?.refresh_token;
             const role = response?.data?.role;
+            const firstName = response?.data?.first_name;
 
             const data = {
                 email: email,
@@ -115,11 +114,13 @@ function SignIn() {
                 accessToken: accessToken,
                 refreshToken: refreshToken,
                 role: role,
+                firstName: firstName,
             };
 
             console.log(data);
 
             setAuth(data);
+            localStorage.setItem('accessToken', accessToken);
 
             setEmail('');
             setPassword('');

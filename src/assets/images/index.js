@@ -1,5 +1,6 @@
 const images = {
     logo: require('~/assets/images/logo.svg').default,
+    logo1: require('~/assets/images/logo1.png'),
     arrowIcon: require('~/assets/images/arrowIcon.svg').default,
     mentorIcon: require('~/assets/images/mentorIcon.svg').default,
     courseIcon: require('~/assets/images/courseIcon.svg').default,
@@ -10,6 +11,7 @@ const images = {
     decoration5: require('~/assets/images/decoration5.svg').default,
     decoration6: require('~/assets/images/decoration6.svg').default,
     decoration7: require('~/assets/images/decoration7.svg').default,
+    decoration8: require('~/assets/images/decoration8.jpg'),
 
     girlLaptop: require('~/assets/images/smiling-cute-teen-girl-using-laptop-white-wall.png'),
     google: require('~/assets/images/google.svg').default,
@@ -61,6 +63,20 @@ const images = {
     companyLogo: require('~/assets/images/companyLogo.svg').default,
     googleIcon: require('~/assets/images/googleIcon.svg').default,
     thumbnailLogIn: require('~/assets/images/young-woman-attending-online-class (1).png'),
+
+    news1: require('~/assets/images/news1.webp'),
+    news2: require('~/assets/images/news2.webp'),
+    news3: require('~/assets/images/news3.webp'),
+    news4: require('~/assets/images/news4.webp'),
+    news5: require('~/assets/images/news5.webp'),
+    news6: require('~/assets/images/news6.jpg'),
+
+    shareIcon: require('~/assets/images/shareIcon.svg').default,
+    atleticoMadrid: require('~/assets/images/atleticoMadrid.svg').default,
+    brugge: require('~/assets/images/brugge.svg').default,
+    barcelona: require('~/assets/images/barcelona.svg').default,
+    villareal: require('~/assets/images/villareal.svg').default,
+    loscLille: require('~/assets/images/loscLille.svg').default,
 };
 
 export default images;

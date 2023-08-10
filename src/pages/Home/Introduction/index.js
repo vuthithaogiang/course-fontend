@@ -1,27 +1,30 @@
 import classNames from 'classnames/bind';
 import styles from './Introduction.module.scss';
 import images from '~/assets/images';
+import { useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
 function Introduction() {
+    const navigate = useNavigate();
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('left')}>
                     <div className={cx('sale-off')}>
-                        <span>50% OFF</span>
-                        <span>Learn From Today</span>
+                        {/* <span>50% OFF</span> */}
+                        <span>Lastest information</span>
                     </div>
                     <h2>
-                        Best <strong>Learning</strong> Platform For Everyone
+                        Access to <strong>Soccer </strong> information
                     </h2>
                     <p className={cx('description')}>
-                        Send your email marketing campaign quickly and easily. Trusted by developers, designers and
-                        marketers for time-savings, scalability and price.
+                        You can access soccer related information, schedules of matches, player galleries, top scores,
+                        and so on.
                     </p>
-                    <div className={cx('explore-course')}>
-                        <span>Explore Courses</span>
+                    <div className={cx('explore-course')} onClick={() => navigate('/players')}>
+                        <span>View Players</span>
                         <img src={images.arrowIcon} alt="icon" />
                     </div>
                 </div>
@@ -30,8 +33,7 @@ function Introduction() {
                         <div className={cx('round-two')}>
                             <div className={cx('round-three')}>
                                 <figure>
-                                    <img src={images.girlLaptop} alt="girl-laptop" />
-                                    <img className={cx('decor')} src={images.decoration2} alt="decoration" />
+                                    <img src={images.decoration8} alt="player" />
                                 </figure>
                             </div>
                         </div>
@@ -41,7 +43,7 @@ function Introduction() {
                                 <img src={images.mentorIcon} alt="icon" />
                             </div>
                             <div className={cx('content')}>
-                                <span>100+</span>
+                                <span>20</span>
                                 <span>Expert Mentors</span>
                             </div>
                         </div>
@@ -50,8 +52,8 @@ function Introduction() {
                                 <img src={images.courseIcon} alt="icon" />
                             </div>
                             <div className={cx('content')}>
-                                <span>1K+</span>
-                                <span>Courses</span>
+                                <span>100+</span>
+                                <span>Players</span>
                             </div>
                         </div>
                     </div>

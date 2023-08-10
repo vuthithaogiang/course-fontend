@@ -1,23 +1,21 @@
 import Introduction from './Introduction';
-import Partner from './Partner';
-import OurCourses from './OurCourses';
-import ChooseUs from './ChooseUs';
-import EducationNews from './EducationNews';
-import UpcomingEvent from './UpcomingEvent';
-import FeatureCategory from './FeatureCategory';
+
+import ProductNewArrival from './ProductNewArrival';
+
 import Review from './Review';
 import ContactUs from './ContactUs';
+import NewLastest from './NewsLastest';
+import Matches from './Matches';
+import Player from './Player';
 
 function Home() {
     return (
         <>
             <Introduction />
-            <Partner />
-            <OurCourses />
-            <ChooseUs />
-            <EducationNews />
-            <UpcomingEvent />
-            <FeatureCategory />
+            <NewLastest />
+            <Matches />
+            <ProductNewArrival />
+            <Player />
             <Review />
             <ContactUs />
         </>
